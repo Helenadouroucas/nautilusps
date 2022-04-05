@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  nautilus_ps:
+    container_name: "nautilus_ps"
+    image: e5e4b84d7ded
+    privileged: true
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /home/helenadouroucas/catkin_ws:/root/catkin_ws
+      - /etc/localtime:/etc/localtime
+    network_mode: host
+    stdin_open: true
+    tty: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            capabilities: [gpu]
