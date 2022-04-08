@@ -1,0 +1,17 @@
+planetas:
+  planeta1:
+    nome: 'planeta1'
+    raio: 1
+    velocidade: 5
+  planeta2:
+    nome: 'planeta2'
+    raio: 2
+    velocidade: 10
+  planeta3:
+    nome: 'planeta3'
+    raio: 3
+    velocidade: 20
+  planeta4:
+    nome: 'planeta4'
+    raio: 4
+    velocidade: 1

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+<!-- Parameters -->
+<rosparam command="load" file="$(find ros_top_esp)/param/planetas.yaml"/>
+
+<!-- Run Nodes -->
+<node pkg="ros_top_esp" name="random_transform" type="sistemasolar.py"/>
+
+</launch>
